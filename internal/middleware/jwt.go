@@ -2,7 +2,6 @@ package middleware
 
 import (
 	"context"
-	"fmt"
 	"net/http"
 	"strings"
 
@@ -14,7 +13,6 @@ func JWTMiddleware(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		bearer := r.Header.Get("Authorization")
 		if !strings.HasPrefix(bearer, "Bearer ") || len(strings.Split(bearer, " ")) != 2 {
-			fmt.Println("failed to parse header")
 
 			utils.NewJSONResponse(w, http.StatusUnauthorized, constants.MsgStatusError, constants.MsgUnauthorized, nil)
 			return
