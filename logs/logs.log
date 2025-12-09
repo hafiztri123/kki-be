@@ -1,0 +1,6 @@
+{"time":"2025-12-08T20:55:25.646959271+07:00","level":"ERROR","msg":"failed to init tools","tools":"db","error":"failed to connect to `user=postgres database=kki_db`:\n\t127.0.0.1:5432 (localhost): dial error: dial tcp 127.0.0.1:5432: connect: connection refused\n\t127.0.0.1:5432 (localhost): dial error: dial tcp 127.0.0.1:5432: connect: connection refused"}
+{"time":"2025-12-08T21:09:49.744367581+07:00","level":"INFO","msg":"Server starting","address":":8080"}
+{"time":"2025-12-09T06:05:14.411141299+07:00","level":"INFO","msg":"Server starting","address":":8080"}
+{"time":"2025-12-09T06:32:33.084994301+07:00","level":"INFO","msg":"Server starting","address":":8080"}
+{"time":"2025-12-09T06:37:35.976335515+07:00","level":"INFO","msg":"Server starting","address":":8080"}
+{"time":"2025-12-09T06:42:06.484656457+07:00","level":"INFO","msg":"Server starting","address":":8080"}
